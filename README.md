@@ -1,35 +1,79 @@
-# flight-delay-analysis
-Data-driven analysis of U.S. flight delays using Python and Random Forest
-# ✈️ Flight Delay Analysis Using Python
 
-A real-world data analysis project using a 1.9M-row flight delay dataset  
-to explore patterns, identify causes of delays, and build an interpretable predictive model.
+## ✈️ Flight Delay Predictor – Data-Driven Analysis & Prediction
 
-## 📊 Objectives
-- Analyze delays by hour, weekday, month, airline, airport, and distance
-- Identify top delay causes for most delayed airlines
-- Map airport and airline codes to readable names
-- Build a basic predictive model (Random Forest) for estimating delays
+A real-world project using a 1.9M-row U.S. flight dataset to explore delay patterns, identify key causes, and build a predictive system using Random Forest — now deployed with an interactive Streamlit app.
 
-## 🔍 Key Insights
-- Flights after 5 PM tend to have higher delays due to cascading effects.
-- JetBlue Airways had the highest average delay, mostly due to late-arriving aircraft.
-- December and July showed the highest delays (seasonal trends).
-- Regional airports like CMX, ACY, and PLN had surprisingly high average delays.
-- Delay prediction modeling attempted but was constrained by local compute limits.
+### 📊 Objectives
 
-## 🛠️ Tools Used
-- Python (Pandas, Seaborn, Scikit-learn)
-- Jupyter Notebook
-- Random Forest Regressor
-- Data Preprocessing & Visualization
+* Analyze delays by **hour, weekday, month, airline, airport, and distance**
+* Identify **top delay causes** for most delayed airlines
+* Map **airport and airline codes** to readable names
+* Build and deploy a **Random Forest model** to predict total delay
 
-## 🔗 Dataset
-> [Download: DelayedFlights.csv](https://www.kaggle.com/datasets/usdot/flight-delays)
+### 🔍 Key Insights
 
-## 📌 Future Work
-- Host model training on cloud (Google Colab / AWS)
-- Improve predictive model with feature engineering
-- Add airline-specific delay forecasts
+* Flights after **5 PM** tend to have higher delays due to cascading schedule shifts.
+* **JetBlue Airways** had the highest average delays, mostly from **late-arriving aircraft**.
+* Peak delays in **December and July** (likely holiday-related); lowest in September–October.
+* **Regional airports** like CMX, ACY, and PLN showed unexpectedly high average delays.
+* Final **Random Forest model** achieved:
+
+  * ✅ **R² Score:** 0.969
+  * ✅ **RMSE:** \~17.7 minutes
+
+### 🤖 Live App (Streamlit)
+
+Predict delay in real time based on flight input:
+
+> 🟢 [Try the app](https://your-deployed-streamlit-link.streamlit.app) ← *(replace this with your real link)*
+
+#### 📷 Screenshot
+
+![Flight Delay Streamlit App](assets/screenshot.png)
 
 ---
+
+### 🛠️ Tools & Technologies
+
+* **Python:** pandas, seaborn, scikit-learn, matplotlib
+* **ML Model:** Random Forest Regressor
+* **Web App:** Streamlit
+* **Persistence:** joblib
+* **Notebook:** Jupyter for full analysis & modeling
+
+---
+
+### 🧪 Files in This Repo
+
+| File                          | Description                      |
+| ----------------------------- | -------------------------------- |
+| `Flight_Delay_Analysis.ipynb` | Full EDA, modeling, evaluation   |
+| `app.py`                      | Streamlit app source             |
+| `flight_delay_rf_model.pkl`   | Trained model (joblib)           |
+| `model_features.pkl`          | Feature list for safe prediction |
+| `README.md`                   | You’re reading it                |
+| `assets/screenshot.png`       | Streamlit UI preview (optional)  |
+
+---
+
+### 🔗 Dataset
+
+* Source: U.S. Department of Transportation
+* 📦 [`DelayedFlights.csv`](https://www.kaggle.com/datasets/usdot/flight-delays)
+
+---
+
+### 📌 Future Work
+
+* Improve model with additional features (e.g., weather, holiday flag)
+* Deploy on cloud (Streamlit Cloud / AWS)
+* Add airline-specific forecasting modules
+* Option to explain delay causes based on input (e.g., Late Aircraft vs Weather)
+
+---
+
+### 🧠 Author
+
+Kulsoom Banu Shaik
+[GitHub](https://github.com/yourusername) • [LinkedIn](https://www.linkedin.com/in/yourusername)
+
