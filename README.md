@@ -25,11 +25,11 @@ A real-world project using a 1.9M-row U.S. flight dataset to explore delay patte
 
 Predict delay in real time based on flight input:
 
-> 🟢 [Try the app](https://your-deployed-streamlit-link.streamlit.app) ← *(replace this with your real link)*
+> 🟢 [Try the app](https://flight-delay-analysis-lg65kidlefgbzougratjre.streamlit.app/) 
 
 #### 📷 Screenshot
 
-![Flight Delay Streamlit App](assets/screenshot.png)
+![Flight Delay Streamlit App](streamlit app screenshot.png)
 
 ---
 
@@ -52,7 +52,7 @@ Predict delay in real time based on flight input:
 | `flight_delay_rf_model.pkl`   | Trained model (joblib)           |
 | `model_features.pkl`          | Feature list for safe prediction |
 | `README.md`                   | You’re reading it                |
-| `assets/screenshot.png`       | Streamlit UI preview (optional)  |
+| `streamlit app screenshot.png`       | Streamlit UI preview (optional)  |
 
 ---
 
@@ -75,5 +75,5 @@ Predict delay in real time based on flight input:
 ### 🧠 Author
 
 Kulsoom Banu Shaik
-[GitHub](https://github.com/yourusername) • [LinkedIn](https://www.linkedin.com/in/yourusername)
+[GitHub](https://github.com/KulsoomBanu5) • [LinkedIn](https://www.linkedin.com/in/kulsoom-banu-8700a4259/)
 
